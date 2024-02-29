@@ -1,7 +1,7 @@
 import java.util.Objects;
 
 public class Task {
-    private Integer id;
+    private String id;
     private String title;
     private boolean isCompleted;
 
