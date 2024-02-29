@@ -37,6 +37,12 @@ public class ToDoList implements IToDoList {
     }
 
     public void pushStack() {
-        history.push(this.taskList);
+        List<Task> tempTaskList = new ArrayList<Task>();
+
+        for(int i = 0; !this.taskList.isEmpty(); i++) {
+            tempTaskList.add(this.taskList.get(i));
+        }
+
+        history.push(tempTaskList);
     }
 }
