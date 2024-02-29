@@ -3,7 +3,7 @@ import java.util.*;
 public class ToDoList implements IToDoList {
     //Data Members
     private List<Task> taskList;
-    private Stack <List<Task>> history = new Stack <List<Task>>();
+    private Stack<List<Task>> history = new Stack<List<Task>>();
 
     public void undo() {
 
@@ -13,15 +13,15 @@ public class ToDoList implements IToDoList {
 
     }
 
-    public void complete() {
+    public void completeTask(String id) {
         
     }
 
-    public void deleteTask(String taskNumber) {
+    public void deleteTask(String id) {
         
     }
 
-    public void editTask() {
+    public void editTask(String id, String title, Boolean isCompleted) {
         
     }
 
