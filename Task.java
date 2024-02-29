@@ -6,7 +6,7 @@ public class Task {
     private boolean isCompleted;
 
     // Constructor
-    public Task(Integer id, String title, boolean isCompleted) {
+    public Task(String id, String title, boolean isCompleted) {
         this.id = id;
         this.title = title;
         this.isCompleted = isCompleted;
@@ -15,7 +15,7 @@ public class Task {
     // Getters
 
     // Getter for ID
-    public Integer getId() {
+    public String getId() {
         return id;
     }
     
@@ -32,7 +32,7 @@ public class Task {
     // Setters
 
     // Setter for ID
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 
