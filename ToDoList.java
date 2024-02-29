@@ -1,13 +1,8 @@
 import java.util.*;
 public class ToDoList implements IToDoList {
     //Data Members
-    private List<Task> taskList;
+    private List<Task> taskList = new ArrayList<Task>();
     private Stack<List<Task>> history = new Stack<List<Task>>();
-
-    public ToDoList() {
-        this.taskList = null;
-        this.history = null;
-    }
 
     public void undo() {
         pushStack();
@@ -23,18 +18,18 @@ public class ToDoList implements IToDoList {
 
     public void completeTask(String id) {
         pushStack();
-        this.taskList.get(Integer.parseInt(id)).setIsCompleted(true);
+        this.taskList.get(Integer.parseInt(id) - 1).setIsCompleted(true);
     }
 
     public void deleteTask(String id) {
         pushStack();
-        this.taskList.remove(Integer.parseInt(id));
+        this.taskList.remove(Integer.parseInt(id) - 1);
     }
 
     public void editTask(String id, String title, Boolean isCompleted) {
         pushStack();
-        this.taskList.get(Integer.parseInt(id)).setTitle(title);
-        this.taskList.get(Integer.parseInt(id)).setIsCompleted(isCompleted);
+        this.taskList.get(Integer.parseInt(id) - 1).setTitle(title);
+        this.taskList.get(Integer.parseInt(id) - 1).setIsCompleted(isCompleted);
     }
 
     public List<Task> listTasks() {
