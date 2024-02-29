@@ -3,9 +3,15 @@ import java.util.Objects;
 public class Task {
     private String id;
     private String title;
-    private boolean isCompleted;
+    public boolean isCompleted;
 
     // Constructor
+
+    public Task(String id, String title) {
+        this.id = id;
+        this.title = title;
+    }
+
     public Task(String id, String title, boolean isCompleted) {
         this.id = id;
         this.title = title;
