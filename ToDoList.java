@@ -9,7 +9,7 @@ public class ToDoList implements IToDoList {
 
     }
 
-    public void addTask(Task taskToAdd) {
+    public void addTask(Task task) {
 
     }
 
