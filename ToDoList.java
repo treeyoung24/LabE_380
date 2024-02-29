@@ -5,7 +5,6 @@ public class ToDoList implements IToDoList {
     private Stack<List<Task>> history = new Stack<List<Task>>();
 
     public void undo() {
-        pushStack();
         //Gets the most recent edit on the taskList and sets the list equal to
         //The most recent edit done to the list of tasks
         this.taskList = history.pop(); 
