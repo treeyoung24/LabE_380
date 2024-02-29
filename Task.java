@@ -3,7 +3,7 @@ import java.util.Objects;
 public class Task {
     private String id;
     private String title;
-    public boolean isCompleted;
+    private boolean isCompleted;
 
     // Constructor
 
@@ -31,7 +31,7 @@ public class Task {
     }
 
     // Getter for isCompleted
-    public boolean getIsCompleted() {
+    public boolean isCompleted() {
         return isCompleted;
     }
 
