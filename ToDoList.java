@@ -8,7 +8,7 @@ public class ToDoList implements IToDoList {
         pushStack();
         //Gets the most recent edit on the taskList and sets the list equal to
         //The most recent edit done to the list of tasks
-        this.taskList = history.get(0); 
+        this.taskList = history.pop(); 
     }
 
     public void addTask(Task task) {
